@@ -71,8 +71,8 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Hello there, I'm Zuguang Tong, a passionate <strong className="text-stone-100">Full Stack Software Engineer</strong> at 
-        <strong className="text-stone-100">Hertz Australia</strong>, where I thrive on turning innovative ideas into tangible 
+        Hello there, I'm Zuguang Tong, a passionate <strong className="text-stone-100">Full Stack Software Engineer</strong> at
+        <strong className="text-stone-100"> Hertz Australia</strong>, where I thrive on turning innovative ideas into tangible 
         digital experiences. 
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
