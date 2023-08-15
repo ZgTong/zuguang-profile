@@ -3,16 +3,14 @@ import {
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
   CalendarIcon,
+  EnvelopeIcon,
   FlagIcon,
   MapIcon,
-  SparklesIcon,
+  // SparklesIcon,
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -44,8 +42,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Zuguang Tong',
+  description: "Zuguang Tong is a Full Stack Software Engineer at Hertz Australia.",
 };
 
 /**
@@ -69,18 +67,22 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `This is Zuguang Tong.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        Hello there, I'm Zuguang Tong, a passionate <strong className="text-stone-100">Full Stack Software Engineer</strong> at 
+        <strong className="text-stone-100">Hertz Australia</strong>, where I thrive on turning innovative ideas into tangible 
+        digital experiences. 
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        With a love for both the front-end and back-end realms of development, I embark on a journey of crafting seamless, 
+        user-centric applications that marry functionality with aesthetics. I believe that the key to success lies not just
+        in writing lines of code, but in building bridges between minds, translating visions into actionable plans.
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        I'm thrilled to have you join me on this digital journey. So, go ahead, click around, and let's
+        embark on a coding adventure together! Welcome to my corner of the web!
       </p>
     </>
   ),
@@ -108,12 +110,12 @@ export const aboutData: About = {
   to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
   in.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Melbourne, VIC', Icon: MapIcon},
+    {label: 'Age', text: '27', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Chinese', Icon: FlagIcon},
+    // {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
+    {label: 'Study', text: 'University of Melbourne', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Hertz Australia', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -122,31 +124,30 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
-    skills: [
-      {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
-    ],
-  },
-  {
     name: 'Frontend development',
     skills: [
       {
-        name: 'React',
+        name: 'Javascript/Typescript',
         level: 9,
       },
       {
-        name: 'Typescript',
+        name: 'CSS/SCSS/LESS',
+        level: 9,
+      },
+      {
+        name: 'HTML',
+        level: 9,
+      },
+      {
+        name: 'React',
+        level: 8,
+      },
+      {
+        name: 'Vue',
+        level: 7,
+      },
+      {
+        name: 'JQuery',
         level: 7,
       },
       {
@@ -159,34 +160,59 @@ export const skills: SkillGroup[] = [
     name: 'Backend development',
     skills: [
       {
-        name: 'Node.js',
+        name: 'NodeJs(Express)',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: 'MongoDB',
+        level: 6,
       },
       {
-        name: 'Golang',
+        name: 'MySql',
+        level: 6,
+      },
+      {
+        name: 'Python(Django)',
+        level: 4,
+      },
+      {
+        name: 'Java',
         level: 4,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Tools',
     skills: [
       {
-        name: 'React Native',
+        name: 'Amazon Web Services',
+        level: 8,
+      },
+      {
+        name: 'Serverless Framework',
+        level: 8,
+      },
+      {
+        name: 'Docker',
+        level: 7,
+      },
+      {
+        name: 'Git',
         level: 9,
       },
+    ],
+  },
+  {
+    name: 'Spoken languages',
+    skills: [
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'Mandarin',
+        level: 10,
       },
       {
-        name: 'Swift',
-        level: 3,
-      },
+        name: 'English',
+        level: 8,
+      }
     ],
   },
 ];
@@ -268,24 +294,30 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
+    date: 'Mar 2021 - Jun 2022',
+    location: 'University of Melbourne',
+    title: 'Masters of Information Technology',
     content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
+    date: 'Jul 2020 - Feb 2021',
+    location: 'Monash University',
+    title: 'Masters of Information Technology',
+    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+  },
+  {
+    date: 'Sep 2014 - Jun 2018',
+    location: 'Chengdu University',
+    title: 'Bachelor of Financial Management',
     content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'Sep 2022 - Present',
+    location: 'Hertz Australia',
+    title: 'Full Stack Developer',
     content: (
       <p>
         Describe work, special projects, notable achievements, what technologies you have been working with, and
@@ -294,9 +326,31 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'Feb 2022 - May 2022',
+    location: 'Capital Guardians',
+    title: 'Full Stack Developer Intern',
+    content: (
+      <p>
+        Describe work, special projects, notable achievements, what technologies you have been working with, and
+        anything else that would be useful for an employer to know.
+      </p>
+    ),
+  },
+  {
+    date: 'Dec 2020 - Mar 2021',
+    location: 'iQIYI',
+    title: 'Frontend Developer Intern',
+    content: (
+      <p>
+        Describe work, special projects, notable achievements, what technologies you have been working with, and
+        anything else that would be useful for an employer to know.
+      </p>
+    ),
+  },
+  {
+    date: 'Dec 2018 - Mar 2020',
+    location: 'KunShan Hi-Think',
+    title: 'Software Engineer',
     content: (
       <p>
         Describe work, special projects, notable achievements, what technologies you have been working with, and
@@ -340,23 +394,23 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'tongzuguang@gmail.com',
+      href: 'mailto:tongzuguang@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Melbourne VIC, Australia',
+      href: 'https://goo.gl/maps/sUuHkrzZBvyHE4pD7',
     },
     {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      type: ContactType.LinkedIn,
+      text: 'Zuguang Tong',
+      href: 'https://www.linkedin.com/in/zuguang-tong-aa7041229/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'ZgTong',
+      href: 'https://github.com/ZgTong',
     },
   ],
 };
@@ -365,9 +419,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/ZgTong'},
+  {label: 'Email', Icon: EnvelopeIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/zuguang-tong-aa7041229/'},
+  // {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
+  // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
