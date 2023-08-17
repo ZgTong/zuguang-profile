@@ -6,13 +6,13 @@ import {
   EnvelopeIcon,
   FlagIcon,
   MapIcon,
-  // SparklesIcon,
+  SparklesIcon,
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
-// import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 // import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 // import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 // import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
@@ -111,7 +111,7 @@ export const aboutData: About = {
     {label: 'Location', text: 'Melbourne, VIC', Icon: MapIcon},
     {label: 'Age', text: '27', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Chinese', Icon: FlagIcon},
-    // {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
+    {label: 'Interests', text: 'Metal Music', Icon: SparklesIcon},
     {label: 'Study', text: 'University of Melbourne', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Hertz Australia', Icon: BuildingOffice2Icon},
   ],
@@ -219,12 +219,12 @@ export const skills: SkillGroup[] = [
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
-  // {
-  //   title: 'Project title 1',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://timbaker.me',
-  //   image: porfolioImage1,
-  // },
+  {
+    title: 'Project title 1',
+    description: 'Give a short description of your project here.',
+    url: 'https://timbaker.me',
+    image: porfolioImage1,
+  },
 ];
 
 /**
@@ -235,13 +235,25 @@ export const education: TimelineItem[] = [
     date: 'Mar 2021 - Jun 2022',
     location: 'University of Melbourne',
     title: 'Masters of Information Technology',
-    content: <p></p>,
+    content: 
+    (
+      <div>
+        <p>Major: Distributed System</p>
+        <p>Grade: H2A</p>
+      </div>
+    ),
   },
   {
     date: 'Jul 2020 - Feb 2021',
     location: 'Monash University',
     title: 'Masters of Information Technology',
-    content: <p></p>,
+    content: 
+    (
+      <div>
+        <p>Transferred this portion of my education to UniMelb with credits. </p>
+        <p>GPA: 3.75/4</p>
+      </div>
+    ),
   },
   {
     date: 'Sep 2014 - Jun 2018',
@@ -257,8 +269,28 @@ export const experience: TimelineItem[] = [
     location: 'Hertz Australia',
     title: 'Full Stack Developer',
     content: (
-      <p>
-      </p>
+      <ul>
+        <li>
+          • Leveraged AWS CodePipeline to achieve CI/CD, resulting in an 80% reduction in deployment time, 
+          enabling faster and more reliable software releases with consistent quality across environments.
+        </li>
+        <li>
+          • Refactored and deployed 2 historical projects in compliance with network security standards, 
+          enhancing project security significantly.
+        </li>
+        <li>
+          • Pioneered the development of a material management system. Expertly implemented request forwarding, 
+          authentication, and parameter verification, enabling seamless delivery of 10+ APIs.
+        </li>
+        <li>
+          • Led the integration of independent projects to Monorepo, reducing cloud resource consumption by 40% 
+          and improving development efficiency by 30%.
+        </li>
+        <li>
+          • Improved user experience by addressing multiple bugs within the company’s management platform, improving 
+          usability by 25% and significantly boosting overall system stability.
+        </li>
+      </ul>
     ),
   },
   {
@@ -266,8 +298,17 @@ export const experience: TimelineItem[] = [
     location: 'Capital Guardians',
     title: 'Full Stack Developer Intern',
     content: (
-      <p>
-      </p>
+      <ul>
+        <li>
+          • Completed over 15 new features, substantially enhancing the user experience of an aged care project built on Django and React.
+        </li>
+        <li>
+          • Achieved a 40% increase in project maintainability and a 25% boost in efficiency by leveraging Docker for streamlined containerization and Git for effective version control.
+        </li>
+        <li>
+          • Crafted comprehensive documentation and code adhering to industry standards, resulting in a 30% improvement in project readability and maintainability.
+        </li>
+      </ul>
     ),
   },
   {
@@ -275,8 +316,14 @@ export const experience: TimelineItem[] = [
     location: 'iQIYI',
     title: 'Frontend Developer Intern',
     content: (
-      <p>
-      </p>
+      <ul>
+        <li>
+          • Developed a reusable mobile address management component using Vue.js, reducing the devel- opment time of address-related features by 60%.
+        </li>
+        <li>
+          • Optimized the layouts of the company’s visual web page builder, leading to 15% faster page load times. Produced 20 high-quality web pages for the operation department.
+        </li>
+      </ul>
     ),
   },
   {
@@ -284,8 +331,16 @@ export const experience: TimelineItem[] = [
     location: 'KunShan Hi-Think',
     title: 'Software Engineer',
     content: (
-      <p>
-      </p>
+      <ul>
+        <li>
+          • Delivered an e-commerce WeChat applet, participating in the complete lifecycle from inception to deployment. 
+          Increased user retention by 20% through iterative enhancements.
+        </li>
+        <li>
+          • Created a robust supply chain platform with Vue.js, delivering feature completion for four modules. 
+          Conducted rigorous bug-fixing to ensure platform stability and optimal functionality.
+        </li>
+      </ul>
     ),
   },
 ];
